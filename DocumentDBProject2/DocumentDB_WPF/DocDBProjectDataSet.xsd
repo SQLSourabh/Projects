@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DocDBProjectDataSet" targetNamespace="http://tempuri.org/DocDBProjectDataSet.xsd" xmlns:mstns="http://tempuri.org/DocDBProjectDataSet.xsd" xmlns="http://tempuri.org/DocDBProjectDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DocDBProjectConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DocDBProjectConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DocumentDB_WPF.Properties.Settings.GlobalReference.Default.DocDBProjectConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ActionStatusTableAdapter" GeneratorDataComponentClassName="ActionStatusTableAdapter" Name="ActionStatus" UserDataComponentName="ActionStatusTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DocDBProjectConnectionString (Settings)" DbObjectName="DocDBProject.dbo.ActionStatus" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Distinct ActionStatus FROM dbo.ActionStatus</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ActionStatus" DataSetColumn="ActionStatus" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EmployeeInfoTableAdapter" GeneratorDataComponentClassName="EmployeeInfoTableAdapter" Name="EmployeeInfo" UserDataComponentName="EmployeeInfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DocDBProjectConnectionString (Settings)" DbObjectName="DocDBProject.dbo.EmployeeInfo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT EmployeeName FROM dbo.EmployeeInfo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ServiceCritacilityTableAdapter" GeneratorDataComponentClassName="ServiceCritacilityTableAdapter" Name="ServiceCritacility" UserDataComponentName="ServiceCritacilityTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DocDBProjectConnectionString (Settings)" DbObjectName="DocDBProject.dbo.ServiceCritacility" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[ServiceCritacility] ([ServiceCritacility]) VALUES (@ServiceCritacility)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ServiceCritacility" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ServiceCritacility" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ServiceCritacility FROM dbo.ServiceCritacility</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ServiceCritacility" DataSetColumn="ServiceCritacility" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProductInfoTableAdapter" GeneratorDataComponentClassName="ProductInfoTableAdapter" Name="ProductInfo" UserDataComponentName="ProductInfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DocDBProjectConnectionString (Settings)" DbObjectName="DocDBProject.dbo.ProductInfo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>Select distinct [ProductName] from [dbo].[ProductInfo]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProductInfo1TableAdapter" GeneratorDataComponentClassName="ProductInfo1TableAdapter" Name="ProductInfo1" UserDataComponentName="ProductInfo1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DocDBProjectConnectionString (Settings)" DbObjectName="DocDBProject.dbo.ProductInfo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>Select distinct [ProductSecondaryDescription] from [dbo].[ProductInfo]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProductSecondaryDescription" DataSetColumn="ProductSecondaryDescription" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DocDBProjectDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DocDBProjectDataSet" msprop:Generator_UserDSName="DocDBProjectDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ActionStatus" msprop:Generator_TableClassName="ActionStatusDataTable" msprop:Generator_TableVarName="tableActionStatus" msprop:Generator_RowChangedName="ActionStatusRowChanged" msprop:Generator_TablePropName="ActionStatus" msprop:Generator_RowDeletingName="ActionStatusRowDeleting" msprop:Generator_RowChangingName="ActionStatusRowChanging" msprop:Generator_RowEvHandlerName="ActionStatusRowChangeEventHandler" msprop:Generator_RowDeletedName="ActionStatusRowDeleted" msprop:Generator_RowClassName="ActionStatusRow" msprop:Generator_UserTableName="ActionStatus" msprop:Generator_RowEvArgName="ActionStatusRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ActionStatus" msprop:Generator_ColumnVarNameInTable="columnActionStatus" msprop:Generator_ColumnPropNameInRow="ActionStatus" msprop:Generator_ColumnPropNameInTable="ActionStatusColumn" msprop:Generator_UserColumnName="ActionStatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EmployeeInfo" msprop:Generator_TableClassName="EmployeeInfoDataTable" msprop:Generator_TableVarName="tableEmployeeInfo" msprop:Generator_RowChangedName="EmployeeInfoRowChanged" msprop:Generator_TablePropName="EmployeeInfo" msprop:Generator_RowDeletingName="EmployeeInfoRowDeleting" msprop:Generator_RowChangingName="EmployeeInfoRowChanging" msprop:Generator_RowEvHandlerName="EmployeeInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeInfoRowDeleted" msprop:Generator_RowClassName="EmployeeInfoRow" msprop:Generator_UserTableName="EmployeeInfo" msprop:Generator_RowEvArgName="EmployeeInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmployeeName" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ServiceCritacility" msprop:Generator_TableClassName="ServiceCritacilityDataTable" msprop:Generator_TableVarName="tableServiceCritacility" msprop:Generator_RowChangedName="ServiceCritacilityRowChanged" msprop:Generator_TablePropName="ServiceCritacility" msprop:Generator_RowDeletingName="ServiceCritacilityRowDeleting" msprop:Generator_RowChangingName="ServiceCritacilityRowChanging" msprop:Generator_RowEvHandlerName="ServiceCritacilityRowChangeEventHandler" msprop:Generator_RowDeletedName="ServiceCritacilityRowDeleted" msprop:Generator_RowClassName="ServiceCritacilityRow" msprop:Generator_UserTableName="ServiceCritacility" msprop:Generator_RowEvArgName="ServiceCritacilityRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ServiceCritacility" msprop:Generator_ColumnVarNameInTable="columnServiceCritacility" msprop:Generator_ColumnPropNameInRow="ServiceCritacility" msprop:Generator_ColumnPropNameInTable="ServiceCritacilityColumn" msprop:Generator_UserColumnName="ServiceCritacility" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ProductInfo" msprop:Generator_TableClassName="ProductInfoDataTable" msprop:Generator_TableVarName="tableProductInfo" msprop:Generator_TablePropName="ProductInfo" msprop:Generator_RowDeletingName="ProductInfoRowDeleting" msprop:Generator_RowChangingName="ProductInfoRowChanging" msprop:Generator_RowEvHandlerName="ProductInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductInfoRowDeleted" msprop:Generator_UserTableName="ProductInfo" msprop:Generator_RowChangedName="ProductInfoRowChanged" msprop:Generator_RowEvArgName="ProductInfoRowChangeEvent" msprop:Generator_RowClassName="ProductInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ProductInfo1" msprop:Generator_TableClassName="ProductInfo1DataTable" msprop:Generator_TableVarName="tableProductInfo1" msprop:Generator_TablePropName="ProductInfo1" msprop:Generator_RowDeletingName="ProductInfo1RowDeleting" msprop:Generator_RowChangingName="ProductInfo1RowChanging" msprop:Generator_RowEvHandlerName="ProductInfo1RowChangeEventHandler" msprop:Generator_RowDeletedName="ProductInfo1RowDeleted" msprop:Generator_UserTableName="ProductInfo1" msprop:Generator_RowChangedName="ProductInfo1RowChanged" msprop:Generator_RowEvArgName="ProductInfo1RowChangeEvent" msprop:Generator_RowClassName="ProductInfo1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductSecondaryDescription" msprop:Generator_ColumnVarNameInTable="columnProductSecondaryDescription" msprop:Generator_ColumnPropNameInRow="ProductSecondaryDescription" msprop:Generator_ColumnPropNameInTable="ProductSecondaryDescriptionColumn" msprop:Generator_UserColumnName="ProductSecondaryDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
